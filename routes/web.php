@@ -19,6 +19,14 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('products', function () {
         return Inertia::render('products');
     })->name('products');
+
+    Route::get('brands', function () {
+        return Inertia::render('brands');
+    })->name('brands');
+
+    Route::get('suppliers', function () {
+        return Inertia::render('suppliers');
+    })->name('suppliers');
 });
 
 require __DIR__ . '/settings.php';
